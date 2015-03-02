@@ -7,9 +7,9 @@ mine commonly used library
 
 #### dataType
 
-~~~
+
 通过 dataType 可以设置接收数据的类型，有以下几种： *text html xml json jsonp script*
-~~~
+
 
 以上分两种情况：
 
@@ -18,9 +18,6 @@ mine commonly used library
 > 的不同类型，对 xmlHttpRequest.responseText 或者 xmlHttpRequest.
 > responseXML 处理成相应的格式
 
-~~~
-在同域的情况下，为了能更好的进行控制，使用以上所有类型，都会采用xmlHttpRequest的形式进行请求的发送和接收，然后中根据dataType的不同类型，对 xmlHttpRequest.responseText 或者 xmlHttpRequest.responseXML 处理成相应的格式
-~~~
 
 ~~~
 在跨域的情况下
