@@ -30,5 +30,3 @@ mine commonly used library
 > 同名的全局函数，来等待服务器端返回的脚本进行调用。
 > script 会通过监控 <script>
 > 的onload事件来处理服务器端脚本加载后的事情（当然也可以不处理）。
-
-
