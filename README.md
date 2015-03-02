@@ -7,7 +7,7 @@ mine commonly used library
 
 #### dataType
 
-通过 dataType 可以设置接收数据的类型，有以下几种： **text html xml json jsonp script**
+通过 dataType 可以设置接收数据的类型，有以下几种： `text` `html` `xml` `json` `jsonp` `script`
 
 
 以上分两种情况：
@@ -26,7 +26,7 @@ mine commonly used library
 > 应的处理，也会报错。
 
 > dataType 为 jsonp script 的请求会使用插入
-> \<script\>标签的形式。jsonp 会通过创建跟 callback 
+> `\<script\>`标签的形式。jsonp 会通过创建跟 callback 
 > 同名的全局函数，来等待服务器端返回的脚本进行调用。
-> script 会通过监控 \<script\>
+> script 会通过监控 `\<script\>`
 > 的onload事件来处理服务器端脚本加载后的事情（当然也可以不处理）。
