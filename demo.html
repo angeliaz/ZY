@@ -3,8 +3,33 @@
 <head>
 	<meta charset="UTF-8">
 	<title>ZY</title>
+	<script type="text/javascript" src="scripts/ZY.core.js"></script>
 </head>
 <body>
+	<div id="wrap">
+		<p>this is a inner text.</p>
+	</div>
+
+	<input type="button" value="click" id="btn">
 	
+	<script type="text/javascript">
+
+		ZY.$('btn').onclick = function() {
+
+			ZY.ajax({
+				dataType: 'json',
+				url: 'http://172.30.23.73/Angelia/ZY/scripts/test.js',
+				data: {},
+				successCallback: function(res) {
+					console.log(res.count);
+				}
+			});
+
+		};
+
+	</script>
+
 </body>
 </html>
+
+
