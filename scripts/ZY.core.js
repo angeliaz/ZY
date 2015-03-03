@@ -113,9 +113,9 @@
  				xhr.onreadystatechange = function() {
  					if(xhr.readyState === 4) {
  						if(xhr.status === 200) {
- 							options.successCallback(ZY.parseJSON(xhr.responseText));
+ 							options.successCallback && options.successCallback(ZY.parseJSON(xhr.responseText));
  						} else {
- 							options.failCallback;
+ 							options.failCallback && options.failCallback(ZY.parseJSON(xhr.responseText));
  						}
  					}
  				};
